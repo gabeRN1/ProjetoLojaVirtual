@@ -17,7 +17,7 @@ class User extends Authenticatable implements JWTSubject
         'password',     // Senha do usuário
     ];
 
-    // Outros campos e métodos do modelo User...
+ 
 
     /**
      * Retorna o identificador único para o JWT
@@ -26,7 +26,7 @@ class User extends Authenticatable implements JWTSubject
      */
     public function getJWTIdentifier()
     {
-        return $this->getKey(); // Normalmente o ID do usuário
+        return $this->getKey(); 
     }
 
     /**
@@ -36,6 +36,6 @@ class User extends Authenticatable implements JWTSubject
      */
     public function getJWTCustomClaims()
     {
-        return []; // Aqui você pode adicionar qualquer dado extra que deseja incluir no token, se necessário.
+        return []; 
     }
 }

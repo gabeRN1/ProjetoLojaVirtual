@@ -27,7 +27,7 @@ class ProductController extends Controller
     {
 
         $user = JWTAuth::user();
-        // 1. Buscar os produtos da FakeStoreAPI
+      
         $response = Http::get('https://fakestoreapi.com/products');
 
         // Verificar se a requisição foi bem-sucedida
